@@ -10,7 +10,7 @@ WordPress follows a specific order to load plugins, ensuring everything runs smo
 
 **Important Points to Remember:**
 
-- WordPress only loads one file per plugin initially. This file (often named `the-plugin-name.php`) containsx basic information like title and description.
+- WordPress only loads one file per plugin initially. This file (often named `the-plugin-name.php`) contains basic information like title and description.
 - Each plugin is responsible for loading its additional files using functions like `require_once` or `wp_enqueue_script`.
 - The order of active plugins can potentially affect functionality if plugins rely on hooks created by others. However, WordPress ensures all plugins are loaded before the `plugins_loaded` hook fires, giving them a chance to interact.
 
